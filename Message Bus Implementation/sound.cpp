@@ -1,7 +1,5 @@
 #include "sound.h"
 
-
-
 sound::sound(string _type, ofVec2f start) : emitter("sound")
 {
 	type = _type;

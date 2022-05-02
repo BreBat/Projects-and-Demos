@@ -50,7 +50,4 @@ class ofApp : public ofBaseApp{
 			testbus.publish("Second Message", "Delta");
 			testbus.unsubscribe(&two);
 		}
-
-
-
 };

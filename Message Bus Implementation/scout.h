@@ -13,9 +13,9 @@ private:
 	vector<ofVec2f> occupiedPositions;
 	int state;
 	// 0 = idle
-	// 1 = wait
-	// 2 = move towards destination
-	// 3 = flee from destination
+	// 1 = wait (NOT IMPLEMENTED)
+	// 2 = move towards location
+	// 3 = flee from location
 	dataBusReceiver busRX;
 	dataBusSender busTX;
 
@@ -41,9 +41,5 @@ public:
 	void setBus(dataBus* bus);
 
 	ofVec2f getPos();
-
-
-
-	
 };
 

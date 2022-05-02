@@ -9,13 +9,13 @@ scout::scout(string _name, ofVec2f start) : busTX(_name)
 	fleeCounter = 0;
 }
 
-
 scout::~scout()
 {
 }
 
 void scout::move(int dx, int dy)
 {
+	//Restrain scouts to the grid
 	if (pos.x + dx > 15 ||
 		pos.x + dx < 0 ||
 		pos.y + dy > 15 ||
@@ -29,6 +29,9 @@ void scout::move(int dx, int dy)
 	}
 }
 
+//Forces the scout to move in random directions
+//if it is colliding with another scout
+//until they are both free
 void scout::collisionCheck()
 {
 	int repeats = 0;
@@ -64,15 +67,15 @@ void scout::handleState()
 {
 	if (state == 0)
 	{
-		//Chill
+		//Hanging out...
 	}
 	else if (state == 1)
 	{
-		//unimplemented
+		//Not implemented
 	}
 	else if (state == 2)
 	{
-		//approach
+		//seek behavior
 		if (pos.distance(effect) < 4)
 		{
 			changeState(0);
@@ -97,6 +100,7 @@ void scout::handleState()
 	}
 	else if (state == 3)
 	{
+		//Flee behavior
 		int dx = 0;
 		int dy = 0;
 

@@ -7,10 +7,12 @@ void ofApp::setup(){
 	testDataBusStuff();
 	cout << endl << endl << endl;
 
+	//Create demo scouts
 	scouts.push_back(scout("scout1", ofVec2f(2, 4)));
 	scouts.push_back(scout("scout2", ofVec2f(10, 14)));
 	scouts.push_back(scout("scout3", ofVec2f(6, 6)));
 
+	//Set up scouts on the data bus
 	for (int i = 0; i < scouts.size(); i++)
 	{
 		events.subscribe(scouts.at(i).getBusReceiverPtr());
@@ -25,6 +27,7 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
 
+	//Limit updates to half-seconds
 	if (ofGetElapsedTimef() - lastUpdate > 0.5f)
 	{
 		cout << endl << endl;
@@ -48,7 +51,7 @@ void ofApp::update(){
 			scouts.at(i).reportPos(); //Broadcast new positions
 		}
 
-		//Scouts deal with collision
+		//Scouts try to deal with collision
 		for (int i = 0; i < scouts.size(); i++)
 		{
 			scouts.at(i).handleBusMessages(); //Record new positions
@@ -62,7 +65,6 @@ void ofApp::update(){
 			scouts.at(i).reportPos(); //Broadcast new positions
 		}
 		
-
 		lastUpdate = ofGetElapsedTimef();
 	}
 }
@@ -70,6 +72,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
+	//Draw the grid
 	for (int i = 0; i <= 16; i++)
 	{
 		ofSetColor(0, 0, 0);
@@ -111,6 +114,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 
+	//Out of bounds check
 	if (x < 100 || x > 900 || y < 100 || y > 900)
 	{
 		//ignore
@@ -122,13 +126,13 @@ void ofApp::mousePressed(int x, int y, int button){
 
 		if (button == 0)
 		{
-			//good sound
+			//create good sound
 			sounds.push_back(sound("good", ofVec2f(clickX, clickY)));
 			sounds.back().setBus(&events);
 		}
 		else if (button == 2)
 		{
-			//bad sound
+			//create bad sound
 			sounds.push_back(sound("bad", ofVec2f(clickX, clickY)));
 			sounds.back().setBus(&events);
 		}
