@@ -1,0 +1,16 @@
+{
+  "domElement": "<random-spawn></random-spawn>",
+  "name" : "Random vehicle/config",  
+  "description": "I will take the liberty of choosing for you.",
+  "css": {
+	"left": "0px",
+    "height": "80px",
+    "width": "450px",
+    "min-width": "230px",
+    "min-height": "70px",
+    "top": "0px"
+  },  
+  "version": "0.9",
+  "preserveAspectRatio": false,
+  "directive": "RandomSpawn"
+}
