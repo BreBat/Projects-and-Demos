@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.DBServerSetWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Define SQL Server" 
+        Height="150" Width="450"
+        ResizeMode="NoResize"
+        Closed="Window_Closed">
+
+    <Canvas Margin="10,10">
+
+        <TextBlock Text="Enter the SQL Server name to connect to for Almomani Library Helper." Canvas.Left="10" Width="404" />
+
+        <TextBox Name="inputBox"
+            TextWrapping="Wrap" 
+            Text="(e.g.: SQLEXPRESS, local machine name, etc)"
+            Foreground="DarkGray"
+            Canvas.Top="29" Canvas.Left="10"
+            Width="404" Height="24"
+            GotFocus="inputBox_GotFocus"
+            KeyDown="inputBox_KeyDown"/>
+        
+        <Button Name="Cancel"
+            Content="Cancel" 
+            Canvas.Left="339" Canvas.Top="67" 
+            Width="75" Height="24"
+            Click="Cancel_Click"/>
+
+        <Button Name="ok"
+            Content="OK"
+            Canvas.Left="243" Canvas.Top="67" 
+            Width="75" Height="24"
+            IsEnabled="False"
+            PreviewMouseDown="ok_PreviewMouseDown"
+            Click="ok_Click"/>
+
+    </Canvas>
+</Window>
