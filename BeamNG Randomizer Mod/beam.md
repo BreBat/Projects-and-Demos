@@ -1,0 +1,16 @@
+# Vehicle Randomizer (BeamNG.Drive game mod)
+Made as a personal project, this mod for the driving simulator BeamNG.Drive adds a UI app to the game that allows users to spawn a random vehicle (of which the game includes many) with some options for setting parameters. The game has no user-accessible way of doing this otherwise, and letting the computer choose a car for you can lead to more interesting gameplay in many scenarios.
+
+|  |  |
+|--|--|
+| ![Image of the mod's interface ingame. In this image the four buttons of the interfaec are laid out in a row. From left to right they are a toggle button with a Camshaft Software logo, a square button reading "Random Vehicle", a toggle button with an equals logo, and another square button reading "Random Config". Both toggle buttons are green.](../_DemoImg/beamRand/optionsFlex.png) | ![Another image of the mod interface, this time organized into two rows of two buttons. At top is the Camshaft toggle and the random vehicle button, at bottom is the equals toggle and the random config button. Both toggle buttons are red.](../_DemoImg/beamRand/optionsRed.png) |
+
+The interface is implemented through HTML using Angular to communicate with the game's LUA engine. Using the toggle buttons as parameters for the LUA scripts, the mod is able to spawn vehicles in three different ways. Pressing the RANDOM VEHICLE button will spawn a random vehicle from the game in its default configuration (Every car in the game supports many configurations, such as different trim levels and customized examples). This is done by pulling the full list of vehicles in the game from the LUA engine and selecting a model key at random.
+
+Pressing RANDOM CONFIG with the "Equals" option disabled pulls the full list of configurations and selects a random entry from that to spawn. This presented a problem, since there are no limits to how many configurations a single model of vehicle can have, vehicles with many configurations would dominate the list and frequently stop vehicles with less configurations from appearing. The "equals" option solves this by randomly selecting a vehicle's dictionary key first (enforcing fairness since every vehicle only has one key), using it to filter the list of configurations to that vehicle only, and selecting randomly from there. 
+
+(The other toggle button is a simple filter. BeamNG supports importing vehicles from a different car design simulator game, however these often do not support configurations in the way first-party vehicles do, so filtering them out can be desirable when choosing random configurations.)
+
+![Screenshot of the game, centered on a sporty sedan. The vehicle has just been spawned by the randomizer mod, with the game's message log reading "Spawned: Bastion Luxe 3.5 AWD". The randomizer interface is near the top of the screen, centered above the vehicle. The equals icon is green.](../_DemoImg/beamRand/bastion.png)
+
+![Screenshot of the game, centered on a crossover hatchback. The vehicle has just been spawned by the randomizer mod, with the game's message log reading "Spawned: FCV Tograc 150dQX". The randomizer interface is near the top of the screen, centered above the vehicle. The equals icon is red.](../_DemoImg/beamRand/vivace.png)
