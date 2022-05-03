@@ -3,7 +3,7 @@ Created for Software Engineering I in a small team, this program takes a network
 
 My contribution to the project was the entire simulation, with other team members working on a GUI (unfortunately unused) and supporting programs that would use data from the simulation to analyze the performance of the railway and locate issues that could be improved upon. 
 
-In place of the GUI, I implemented an optional detailed execution mode that gives a readout of what the simulation is currently doing, shown below.
+In place of the GUI, I implemented an optional detailed execution mode that gives a readout of what the simulation is currently doing, shown below. Each image's alt text contains a summary of what is displayed.
 
 ![Image of the train simlator running. It is 6:01 AM on the second day of the simulation. Train one is waiting in a station. Train two is down for maintenance. Trains three and four are hauling freight to different parts of the network](../_DemoImg/trainRouter/hauling.png)
 
