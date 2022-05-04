@@ -11,6 +11,6 @@ Pressing RANDOM CONFIG with the "Equals" option disabled pulls the full list of 
 
 (The other toggle button is a simple filter. BeamNG supports importing vehicles from a different car design simulator game, however these often do not support configurations in the way first-party vehicles do, so filtering them out can be desirable when choosing random configurations.)
 
-![Screenshot of the game, centered on a sporty sedan. The vehicle has just been spawned by the randomizer mod, with the game's message log reading "Spawned: Bastion Luxe 3.5 AWD". The randomizer interface is near the top of the screen, centered above the vehicle. The equals icon is green.](../_DemoImg/beamRand/bastion.png)
-
-![Screenshot of the game, centered on a crossover hatchback. The vehicle has just been spawned by the randomizer mod, with the game's message log reading "Spawned: FCV Tograc 150dQX". The randomizer interface is near the top of the screen, centered above the vehicle. The equals icon is red.](../_DemoImg/beamRand/vivace.png)
+| ![Screenshot of the game, centered on a sporty sedan. The vehicle has just been spawned by the randomizer mod, with the game's message log reading "Spawned: Bastion Luxe 3.5 AWD". The randomizer interface is near the top of the screen, centered above the vehicle. The equals icon is green.](../_DemoImg/beamRand/bastion.png) | ![Screenshot of the game, centered on a crossover hatchback. The vehicle has just been spawned by the randomizer mod, with the game's message log reading "Spawned: FCV Tograc 150dQX". The randomizer interface is near the top of the screen, centered above the vehicle. The equals icon is red.](../_DemoImg/beamRand/vivace.png) |
+|--|--|
+|  |  |
