@@ -1,0 +1,214 @@
+[
+    {
+      "name": "Albania",
+      "alpha3Code": "ALB"
+    },
+    {
+      "name": "Andorra",
+      "alpha3Code": "AND"
+    },
+    {
+      "name": "Austria",
+      "alpha3Code": "AUT"
+    },
+    {
+      "name": "Belarus",
+      "alpha3Code": "BLR"
+    },
+    {
+      "name": "Belgium",
+      "alpha3Code": "BEL"
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "alpha3Code": "BIH"
+    },
+    {
+      "name": "Bulgaria",
+      "alpha3Code": "BGR"
+    },
+    {
+      "name": "Croatia",
+      "alpha3Code": "HRV"
+    },
+    {
+      "name": "Cyprus",
+      "alpha3Code": "CYP"
+    },
+    {
+      "name": "Czech Republic",
+      "alpha3Code": "CZE"
+    },
+    {
+      "name": "Denmark",
+      "alpha3Code": "DNK"
+    },
+    {
+      "name": "Estonia",
+      "alpha3Code": "EST"
+    },
+    {
+      "name": "Faroe Islands",
+      "alpha3Code": "FRO"
+    },
+    {
+      "name": "Finland",
+      "alpha3Code": "FIN"
+    },
+    {
+      "name": "France",
+      "alpha3Code": "FRA"
+    },
+    {
+      "name": "Germany",
+      "alpha3Code": "DEU"
+    },
+    {
+      "name": "Gibraltar",
+      "alpha3Code": "GIB"
+    },
+    {
+      "name": "Greece",
+      "alpha3Code": "GRC"
+    },
+    {
+      "name": "Guernsey",
+      "alpha3Code": "GGY"
+    },
+    {
+      "name": "Holy See",
+      "alpha3Code": "VAT"
+    },
+    {
+      "name": "Hungary",
+      "alpha3Code": "HUN"
+    },
+    {
+      "name": "Iceland",
+      "alpha3Code": "ISL"
+    },
+    {
+      "name": "Ireland",
+      "alpha3Code": "IRL"
+    },
+    {
+      "name": "Isle of Man",
+      "alpha3Code": "IMN"
+    },
+    {
+      "name": "Italy",
+      "alpha3Code": "ITA"
+    },
+    {
+      "name": "Jersey",
+      "alpha3Code": "JEY"
+    },
+    {
+      "name": "Latvia",
+      "alpha3Code": "LVA"
+    },
+    {
+      "name": "Liechtenstein",
+      "alpha3Code": "LIE"
+    },
+    {
+      "name": "Lithuania",
+      "alpha3Code": "LTU"
+    },
+    {
+      "name": "Luxembourg",
+      "alpha3Code": "LUX"
+    },
+    {
+      "name": "Macedonia (the former Yugoslav Republic of)",
+      "alpha3Code": "MKD"
+    },
+    {
+      "name": "Malta",
+      "alpha3Code": "MLT"
+    },
+    {
+      "name": "Moldova (Republic of)",
+      "alpha3Code": "MDA"
+    },
+    {
+      "name": "Monaco",
+      "alpha3Code": "MCO"
+    },
+    {
+      "name": "Montenegro",
+      "alpha3Code": "MNE"
+    },
+    {
+      "name": "Netherlands",
+      "alpha3Code": "NLD"
+    },
+    {
+      "name": "Norway",
+      "alpha3Code": "NOR"
+    },
+    {
+      "name": "Poland",
+      "alpha3Code": "POL"
+    },
+    {
+      "name": "Portugal",
+      "alpha3Code": "PRT"
+    },
+    {
+      "name": "Republic of Kosovo",
+      "alpha3Code": "KOS"
+    },
+    {
+      "name": "Romania",
+      "alpha3Code": "ROU"
+    },
+    {
+      "name": "Russian Federation",
+      "alpha3Code": "RUS"
+    },
+    {
+      "name": "San Marino",
+      "alpha3Code": "SMR"
+    },
+    {
+      "name": "Serbia",
+      "alpha3Code": "SRB"
+    },
+    {
+      "name": "Slovakia",
+      "alpha3Code": "SVK"
+    },
+    {
+      "name": "Slovenia",
+      "alpha3Code": "SVN"
+    },
+    {
+      "name": "Spain",
+      "alpha3Code": "ESP"
+    },
+    {
+      "name": "Svalbard and Jan Mayen",
+      "alpha3Code": "SJM"
+    },
+    {
+      "name": "Sweden",
+      "alpha3Code": "SWE"
+    },
+    {
+      "name": "Switzerland",
+      "alpha3Code": "CHE"
+    },
+    {
+      "name": "Ukraine",
+      "alpha3Code": "UKR"
+    },
+    {
+      "name": "United Kingdom of Great Britain and Northern Ireland",
+      "alpha3Code": "GBR"
+    },
+    {
+      "name": "Åland Islands",
+      "alpha3Code": "ALA"
+    }
+  ]

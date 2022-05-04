@@ -1,0 +1,43 @@
+body{
+	background: whitesmoke;
+}
+
+#map{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background: steelblue;
+	border: 10px rgb(184, 140, 31) groove;
+	border-radius: 2%;
+}
+
+.mapLayer{
+	position: absolute;  
+}
+
+#hover_indicator{
+	font-size: 150%;
+
+	border: 10px rgb(184, 140, 31) groove;
+	border-radius: 5%;
+
+	align-self: center;
+	width: min-content;
+
+	max-width: 65vw;
+	white-space: nowrap;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 10px;
+
+	background-color: aliceblue;
+}
+
+#hover_container{
+	margin-top: 8px;
+
+	height: 70px;
+}
