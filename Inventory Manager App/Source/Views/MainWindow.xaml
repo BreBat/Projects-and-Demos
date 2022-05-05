@@ -1,0 +1,52 @@
+﻿<Window x:Class="CIS476_Project3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CIS476_Project3"
+        xmlns:views="clr-namespace:CIS476_Project3.Views"
+        mc:Ignorable="d"
+        Title="Dealer Inventory"
+        Height="450" Width="800"
+        IsEnabledChanged="Window_IsEnabledChanged">
+    <!--
+    View: Mainwindow
+    Acts primarily as a container for the customer and 
+    dealer view, as well as a means for switching 
+    between the two using the file menu options.
+    -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="15"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+
+        <Menu Name="Toolbar"
+              Grid.Row="0" Grid.Column="0"
+              Grid.ColumnSpan="999">
+            <MenuItem Name="File"
+                      Header="File">
+                <MenuItem Name="login"
+                          Header="Dealer Login"
+                          Click="login_Click"/>
+                <MenuItem Name="logout"
+                          Header="Logout"
+                          Click="logout_Click"
+                          IsEnabled="False"/>
+            </MenuItem>
+        </Menu>
+
+        <Frame Name="currentView"
+               Grid.Row="1" Grid.Column="0"
+               Grid.RowSpan="999"
+               Grid.ColumnSpan="999"
+               NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>
